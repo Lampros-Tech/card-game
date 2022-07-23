@@ -1,0 +1,40 @@
+h1 {
+  padding: 20px;
+  color: #000;
+
+  background: #fff;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+
+.sub-header {
+  padding: 5px;
+  color: rgb(60, 33, 122);
+  font-size: 20px;
+  font-weight: 800;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  color: rgb(60, 33, 122);
+  border-radius: 8px;
+  background-color: rgb(184, 184, 184);
+  margin-bottom: 8px;
+}
+button:hover {
+  color: rgb(239, 237, 245);
+  background-color: rgb(60, 33, 122);
+  font-weight: 800;
+}
+.bold {
+  text-transform: uppercase;
+}
+
+.reset-button {
+  height: 40px;
+  width: 40px;
+  background: #c4093f;
+  color: #fff;
+}

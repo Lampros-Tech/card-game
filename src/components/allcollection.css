@@ -1,0 +1,25 @@
+.allcollection {
+  color: black;
+}
+
+.imagegrid {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+}
+
+.image-box {
+  border: 2px solid;
+}
+
+.demo-img {
+  height: 300px;
+  width: 225px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+h2 {
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.vanta-canvas {
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+  z-index: -1 !important;
+  display: flex !important;
+}

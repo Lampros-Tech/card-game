@@ -1,0 +1,27 @@
+.MuiDialog-paperWidthSm {
+  max-width: null !important;
+  width: 80% !important;
+  /* background-color: rgb(142, 208, 212) !important; */
+  background-color: #ded9cf;
+
+  border-radius: 30px !important;
+  text-align: center;
+}
+h2 {
+  color: #000 !important;
+  margin-top: 15px;
+}
+.MuiDialogContentText-root {
+  font-size: 20px !important;
+}
+.MuiTypography-h6 {
+  font-size: 25px !important;
+  color: #000 !important;
+  font-weight: 500;
+}
+.MuiDialogActions-root {
+  display: unset !important;
+}
+.MuiButton-label:hover {
+  color: #000 !important;
+}
