@@ -1,0 +1,621 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "CreateProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "isWinner",
+						"type": "bool"
+					}
+				],
+				"name": "InGame",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "addressToCollectionCreated",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "cid",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "twitter",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "discord",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mediumURL",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "collectionURL",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isGame1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isGame2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "giveAways",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "addressToGame1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isWinner",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "addressToGame2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isWinner",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToUser",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noGame1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noGame2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noOfWinnerInGame1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noOfWinnerInGame2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "cid",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "d",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mu",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cu",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "g1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "g2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "giveaway",
+						"type": "uint256"
+					}
+				],
+				"name": "createCollection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "getAllCollection",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "twitter",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "discord",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "mediumURL",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collectionURL",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isGame1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isGame2",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "giveAways",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct solidGames.Collection",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCollectionId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getCollections",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "twitter",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "discord",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "mediumURL",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "collectionURL",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isGame1",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "isGame2",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "giveAways",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct solidGames.Collection",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getLengthOfUserCollections",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getUserInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "collection_id",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noGame1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noGame2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfWinnerInGame1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfWinnerInGame2",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct solidGames.UserInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "idToCollection",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "cid",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "twitter",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "discord",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mediumURL",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "collectionURL",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isGame1",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isGame2",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "giveAways",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "coll_id",
+						"type": "uint256"
+					}
+				],
+				"name": "participate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "usersInCollection",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidGames.sol": "solidGames"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidGames.sol": {
+			"keccak256": "0xe639406da3c2825efcd405b6d252888f8bfd105defc50c3b8ac1f6da5eefd1b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fce648eb350862e9d6010b0c5c08ab5a5fc07360f896384b6710291e97bdd5c1",
+				"dweb:/ipfs/QmNXAxYaWQ88W7g2JEST7oANm26nKGYvptWzUQEvwkZj9X"
+			]
+		}
+	},
+	"version": 1
+}
