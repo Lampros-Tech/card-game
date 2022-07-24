@@ -65,6 +65,8 @@
 .restart-button {
   height: 40px;
   width: 40px;
+  background: #5c5c5e;
+  color: #fff;
 }
 
 .text-bg {

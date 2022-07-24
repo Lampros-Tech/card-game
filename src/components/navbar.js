@@ -119,69 +119,71 @@ const Navbar = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav className="navbar" style={{ top: visible ? "0" : "-100px" }}>
-      <Link to="/" className="nav-logo">
-        <img
-          style={{ width: "150px", height: "100px" }}
-          src={logo}
-          alt="logo"
-        />
-      </Link>
-      <div onClick={handleClick} className="nav-icon">
-        {open ? <FiX /> : <FiMenu />}
-      </div>
-      <ul className={open ? "nav-links active" : "nav-links"}>
-        <li className="nav-item">
-          <Link to="/" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">Home</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/admin" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">Admin</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/all" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">All</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/single" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">Single</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/rps" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">RPS</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/memory" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">Memory</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/chat" className="nav-link" onClick={closeMenu}>
-            <div className="navtextstyle">Chat</div>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <button
-            className="connect"
-            style={{
-              cursor: "pointer",
-            }}
-            onClick={() => {
-              onClick();
-              handleNetworkSwitch("polygon");
-            }}
-          >
-            <div className="connectstyle">Connect</div>
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <div className="navbar-main">
+      <nav className="navbar" style={{ top: visible ? "0" : "-100px" }}>
+        <Link to="/" className="nav-logo">
+          <img
+            style={{ width: "110px", height: "100px" }}
+            src={logo}
+            alt="logo"
+          />
+        </Link>
+        <div onClick={handleClick} className="nav-icon">
+          {open ? <FiX /> : <FiMenu />}
+        </div>
+        <ul className={open ? "nav-links active" : "nav-links"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">Home</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/admin" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">Admin</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/all" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">All</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/single" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">Single</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/rps" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">RPS</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/memory" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">Memory</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/chat" className="nav-link" onClick={closeMenu}>
+              <div className="navtextstyle">Chat</div>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <button
+              className="connect"
+              style={{
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                onClick();
+                handleNetworkSwitch("polygon");
+              }}
+            >
+              <div className="connectstyle">Connect</div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 

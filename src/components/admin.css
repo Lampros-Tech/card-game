@@ -1,5 +1,7 @@
 .items {
   color: black;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .textfield {
@@ -14,12 +16,16 @@
 
 .input {
   display: grid;
+  background-color: #a3f3ff;
+  width: 20%;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .admin-submit {
   height: 40px;
   width: 100px;
-  background: #c4093f;
+  background: #5c5c5e;
   color: #fff;
 }
 
@@ -28,4 +34,16 @@
   height: 30px;
   margin-left: -5px;
   margin-right: -5px;
+}
+
+.MuiButton-contained {
+  width: 150px;
+  margin: 0 auto !important;
+  background: #5c5c5e !important;
+  color: #fff !important;
+  margin: 1px solid black;
+}
+
+.MuiButton-contained:hover {
+  color: #fff !important;
 }

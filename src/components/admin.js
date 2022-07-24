@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./admin.css";
 import TextField from "@material-ui/core/TextField";
+import { Button } from "@material-ui/core";
 
 const Admin = () => {
   const [collection, setCollection] = useState("");
@@ -14,10 +15,12 @@ const Admin = () => {
   return (
     <div className="admin">
       <div className="input">
+        <br />
+
         <TextField
           className="textfield"
           value={collection}
-          placeholder="Collection"
+          label="Collection"
           onChange={(e) => {
             setCollection(e.target.value);
           }}
@@ -26,7 +29,7 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={twitter}
-          placeholder="Twitter"
+          label="Twitter"
           onChange={(e) => {
             setTwitter(e.target.value);
           }}
@@ -36,7 +39,7 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={discord}
-          placeholder="Discord"
+          label="Discord"
           onChange={(e) => {
             setDiscord(e.target.value);
           }}
@@ -46,7 +49,7 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={medium}
-          placeholder="Medium URL"
+          label="Medium URL"
           onChange={(e) => {
             setMedium(e.target.value);
           }}
@@ -56,7 +59,7 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={collectionurl}
-          placeholder="Collection URL"
+          label="Collection URL"
           onChange={(e) => {
             setCollectionurl(e.target.value);
           }}
@@ -66,7 +69,7 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={change}
-          placeholder="Changing Games"
+          label="Changing Games"
           onChange={(e) => {
             setChange(e.target.value);
           }}
@@ -76,13 +79,22 @@ const Admin = () => {
         <TextField
           className="textfield"
           value={give}
-          placeholder="How Many Give Aways"
+          label="How Many Give Aways"
           onChange={(e) => {
             setGive(e.target.value);
           }}
         />
         <br />
+        <Button variant="contained" component="label">
+          Upload Image
+          <input type="file" hidden />
+        </Button>
+        <br />
+        <br />
+        <br />
       </div>
+      <br />
+
       <button className="admin-submit">Submit</button>
     </div>
   );
