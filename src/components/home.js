@@ -22,6 +22,10 @@ const home = () => {
         <ImArrowDown />
         <div className="steps">NFT</div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
