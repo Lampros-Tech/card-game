@@ -148,11 +148,6 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/single" className="nav-link" onClick={closeMenu}>
-              <div className="navtextstyle">Single</div>
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/rps" className="nav-link" onClick={closeMenu}>
               <div className="navtextstyle">RPS</div>
             </Link>

@@ -7,7 +7,11 @@ const home = () => {
   return (
     <div className="home">
       <img className="home-img" src={HomeImg} />
-      <div>About</div>
+      <br />
+      <br />
+      <br />
+      <br />
+
       <div>
         <div>NFT Collections</div>
         <div className="steps">Connect</div>
