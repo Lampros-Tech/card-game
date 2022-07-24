@@ -13,7 +13,7 @@ const Vanta = () => {
         WAVES({
           el: vantaRef.current,
           THREE: THREE,
-          mouseControls: false,
+          mouseControls: true,
           touchControls: true,
           gyroControls: false,
           minHeight: 1000.0,

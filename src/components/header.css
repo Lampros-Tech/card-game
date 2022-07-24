@@ -2,9 +2,12 @@ h1 {
   padding: 20px;
   color: #000;
 
-  background: #fff;
   text-align: center;
   font-family: "Russo One", sans-serif;
+}
+
+.game-points {
+  font-size: 50px;
 }
 
 .sub-header {
@@ -29,7 +32,7 @@ button:hover {
   font-weight: 800;
 }
 .bold {
-  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .reset-button {

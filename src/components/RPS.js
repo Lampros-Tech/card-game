@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./RPS.css";
+import { FaRedo } from "react-icons/fa";
 import Rock from "./images/rock1.png";
 import Paper from "./images/paper1.png";
 import Scissor from "./images/scissors1.png";
 
-const Rps = () => {
+const RPS = () => {
   const [userChoice, setUserChoice] = useState("rock");
   const [computerChoice, setComputerChoice] = useState("rock");
   const [userPoints, setUserPoints] = useState(0);
@@ -97,24 +98,28 @@ const Rps = () => {
 
   return (
     <div className="App">
-      <h1 className="heading">Rock-Paper-Scissors</h1>
+      <h1 className="heading">Rock Paper Scissors</h1>
       <div className="score">
-        <h1 className="game-points">User Points: {userPoints}</h1>
-        <h1 className="game-points">Computer Points: {computerPoints}</h1>
+        <h1 className="text-bg">
+          User Points <br /> {userPoints}
+        </h1>
+        <h1 className="text-bg">
+          Computer Points <br /> {computerPoints}
+        </h1>
       </div>
 
       <div className="choice">
         <div className="choice-user">
           <img
             className="user-hand"
-            src={`../images/${userChoice}.png`}
+            src={`./images/${userChoice}.png`}
             alt=""
           ></img>
         </div>
         <div className="choice-computer">
           <img
             className="computer-hand"
-            src={`../images/${computerChoice}.png`}
+            src={`./images/${computerChoice}.png`}
             alt=""
           ></img>
         </div>
@@ -138,14 +143,18 @@ const Rps = () => {
       </div>
 
       <div className="result">
-        <h1 className="game-points">Turn Result: {turnResult}</h1>
-        <h1 className="game-points">Final Result: {result}</h1>
+        <h1 className="text-bg">
+          Turn Result <br /> {turnResult}
+        </h1>
+        <h1 className="text-bg">
+          Final Result <br /> {result}
+        </h1>
       </div>
 
       <div className="button-div">
         {gameOver && (
-          <button className="button" onClick={() => reset()}>
-            Restart Game?
+          <button className="restart-button" onClick={() => reset()}>
+            <FaRedo />
           </button>
         )}
       </div>
@@ -153,4 +162,4 @@ const Rps = () => {
   );
 };
 
-export default Rps;
+export default RPS;
