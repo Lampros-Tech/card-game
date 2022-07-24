@@ -73,11 +73,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.ethereum.on("chainChanged", networkChanged);
+    if(window.ethereum){
+      window.ethereum.on("chainChanged", networkChanged);
 
-    return () => {
-      window.ethereum.removeListener("chainChanged", networkChanged);
-    };
+      return () => {
+        window.ethereum.removeListener("chainChanged", networkChanged);
+      };
+    }
   }, []);
 
   const [open, setOpen] = useState(false);
