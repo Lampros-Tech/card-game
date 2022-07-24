@@ -4,6 +4,7 @@ import { FaRedo } from "react-icons/fa";
 import Rock from "./images/rock1.png";
 import Paper from "./images/paper1.png";
 import Scissor from "./images/scissors1.png";
+import { connect } from "@tableland/sdk";
 
 const RPS = () => {
   const [userChoice, setUserChoice] = useState("rock");
@@ -138,6 +139,7 @@ const RPS = () => {
             alt={`image${index}`}
             height={"50px"}
             width={"50px"}
+            style={{ cursor: "pointer" }}
           />
         ))}
       </div>

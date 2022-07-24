@@ -47,3 +47,21 @@
 .MuiButton-contained:hover {
   color: #fff !important;
 }
+
+select#games.textfield {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.message {
+  position: fixed;
+  bottom: 20px;
+  border-radius: 10px;
+  right: 20px;
+  width: 250px;
+  display: flex;
+}
+
+.message-main {
+  flex-grow: 1;
+}
